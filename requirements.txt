@@ -26,7 +26,6 @@ pycodestyle==2.6.0
 Pygments==2.8.1
 pyTelegramBotAPI==3.7.9
 python-dateutil==2.8.1
-pywin32==300
 pyzmq==22.0.3
 requests==2.24.0
 rsa==4.7.2
