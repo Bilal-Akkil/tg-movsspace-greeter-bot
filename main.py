@@ -37,7 +37,7 @@ while True:
   @bot.message_handler(content_types=["new_chat_members"])
   def foo(message):
       bot.reply_to(message, 'أهلا وسهلا ' + man_raising_hand 
-      + '\n' + '@{}'.format(str(message.from_user.username)) 
+      + '\n' + message.from_user.id 
       + '\n' + 'إذا عندك طلبات افلام او مسلسلات, لاتتردد بأنك تبعت' + hugging_face)
 
       
