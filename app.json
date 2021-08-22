@@ -4,7 +4,8 @@
   "keywords": [
     "telegram",
   ],
-
+  "success_url": "https://telegram.dog/movsspace_greeter_bot",
+  "website": "https://github.com/Bilal-Akkil",
   "repository": "https://github.com/Bilal-Akkil",
   "env": {
     "WEBHOOK": {
