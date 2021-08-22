@@ -1,0 +1,32 @@
+{
+  "name": "tg-movsspace-greeter-bot",
+  "description": "tg-movsspace-greeter-bot.",
+  "keywords": [
+    "telegram",
+  ],
+
+  "repository": "https://github.com/Bilal-Akkil",
+  "env": {
+    "API_KEY": {
+      "description": "The bot api key.",
+      "value": "ANYTHING"
+    },
+    "TMDB_TOKEN": {
+      "description": "tmdb token, as a string.",
+      "value": ""
+    }
+  },
+  "addons": [
+  ],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
