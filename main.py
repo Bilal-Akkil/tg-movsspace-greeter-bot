@@ -2,8 +2,8 @@ import os
 import telebot
 import urllib.request, json
 
-API_KEY = '1856849904:AAHO2YR1i5nImIoCANpVXQRU8gM60sNgIk0'
-TMDB_TOKEN = '404e20cb3319c57b15dac6ff2ebc6d32'
+API_KEY = ''
+TMDB_TOKEN = ''
 
 
 bot = telebot.TeleBot(API_KEY)
