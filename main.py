@@ -2,8 +2,15 @@ import os
 import telebot
 import urllib.request, json
 
-API_KEY = os.environ.get("API_KEY", "")
-TMDB_TOKEN = os.environ.get("TMDB_TOKEN", "")
+# the secret configuration specific things
+if bool(os.environ.get("WEBHOOK", False)):
+    from sample_config import Config
+else:
+    from config import Config
+
+
+API_KEY = Config.API_KEY
+TMDB_TOKEN = Config.TMDB_TOKEN
 
 
 bot = telebot.TeleBot(API_KEY)
