@@ -7,9 +7,13 @@
 
   "repository": "https://github.com/Bilal-Akkil",
   "env": {
+    "WEBHOOK": {
+      "description": "Setting this to ANYTHING will enable webhooks when in env mode",
+      "value": "ANYTHING"
+    },
     "API_KEY": {
       "description": "The bot api key.",
-      "value": "ANYTHING"
+      "value": ""
     },
     "TMDB_TOKEN": {
       "description": "tmdb token, as a string.",
